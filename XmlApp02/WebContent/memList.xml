@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD 구성 -->
+<!DOCTYPE memList 
+[
+<!ELEMENT memList (memberInfo+)>
+<!ELEMENT memberInfo (name, telephone, curriculumn, zipCode, addr, email ,year)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT curriculumn (sub+)>
+<!ELEMENT sub (#PCDATA)>
+<!ELEMENT zipCode (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST memberInfo mid CDATA #IMPLIED>
+]>
+
+<memList>
+	<!-- memList.xml -->
+	<memberInfo mid="1">
+		<name>임하성</name>
+		<telephone><![CDATA[010-1111-2345]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>78945</zipCode>
+		<addr>인천광역시 중구 운서동</addr>
+		<email><![CDATA[lhs@test.com]]></email>
+		<year>1995</year>
+	</memberInfo>
+	
+	<memberInfo mid="2">
+		<name>이주형</name>
+		<telephone><![CDATA[010-2222-3456]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>45673</zipCode>
+		<addr>서울시 중구 신당동</addr>
+		<email><![CDATA[ljh@test.com]]></email>
+		<year>1999</year>
+	</memberInfo>
+	
+	<memberInfo mid="3">
+		<name>엄재용</name>
+		<telephone><![CDATA[010-3333-4567]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>12375</zipCode>
+		<addr>서울시 관악구 신림동</addr>
+		<email><![CDATA[ujy@test.com]]></email>
+		<year>1994</year>
+	</memberInfo>
+	
+	<memberInfo mid="4">
+		<name>박나영</name>
+		<telephone><![CDATA[010-4444-5678]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>43372</zipCode>
+		<addr>서울시 동작구 상도동</addr>
+		<email><![CDATA[pny@test.com]]></email>
+		<year>1999</year>
+	</memberInfo>
+	
+	<memberInfo mid="5">
+		<name>오수경</name>
+		<telephone><![CDATA[010-5555-6789]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>43701</zipCode>
+		<addr>서울시 중랑구 상봉동</addr>
+		<email><![CDATA[osk@test.com]]></email>
+		<year>1994</year>
+	</memberInfo>
+
+	<memberInfo mid="6">
+		<name>문정환</name>
+		<telephone><![CDATA[010-6666-7890]]></telephone>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<zipCode>73342</zipCode>
+		<addr>인천 중랑구 만수동</addr>
+		<email><![CDATA[mjh@test.com]]></email>
+		<year>1999</year>
+	</memberInfo>
+</memList>
